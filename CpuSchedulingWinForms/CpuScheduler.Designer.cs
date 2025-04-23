@@ -49,6 +49,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cpuSchedulerTab = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSTRF = new System.Windows.Forms.Button();
             this.btnRoundRobin = new System.Windows.Forms.Button();
             this.restartApp = new System.Windows.Forms.Label();
             this.btnPriority = new System.Windows.Forms.Button();
@@ -313,6 +315,8 @@
             this.cpuSchedulerTab.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.cpuSchedulerTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cpuSchedulerTab.BackgroundImage")));
             this.cpuSchedulerTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cpuSchedulerTab.Controls.Add(this.button1);
+            this.cpuSchedulerTab.Controls.Add(this.btnSTRF);
             this.cpuSchedulerTab.Controls.Add(this.btnRoundRobin);
             this.cpuSchedulerTab.Controls.Add(this.restartApp);
             this.cpuSchedulerTab.Controls.Add(this.btnPriority);
@@ -327,6 +331,26 @@
             this.cpuSchedulerTab.Size = new System.Drawing.Size(501, 413);
             this.cpuSchedulerTab.TabIndex = 1;
             this.cpuSchedulerTab.Text = "CPU Scheduler";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(175, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 56);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Priority (Preemptive)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnPriorityPreemptive_Click);
+            // 
+            // btnSTRF
+            // 
+            this.btnSTRF.Location = new System.Drawing.Point(16, 338);
+            this.btnSTRF.Name = "btnSTRF";
+            this.btnSTRF.Size = new System.Drawing.Size(138, 56);
+            this.btnSTRF.TabIndex = 13;
+            this.btnSTRF.Text = "SHORTEST TIME REMAINING FIRST";
+            this.btnSTRF.UseVisualStyleBackColor = true;
+            this.btnSTRF.Click += new System.EventHandler(this.btnSTRF_Click);
             // 
             // btnRoundRobin
             // 
@@ -353,7 +377,7 @@
             this.restartApp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.restartApp.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restartApp.ForeColor = System.Drawing.Color.Lime;
-            this.restartApp.Location = new System.Drawing.Point(362, 379);
+            this.restartApp.Location = new System.Drawing.Point(371, 379);
             this.restartApp.Name = "restartApp";
             this.restartApp.Size = new System.Drawing.Size(113, 15);
             this.restartApp.TabIndex = 11;
@@ -587,5 +611,7 @@
         private System.Windows.Forms.Button btnRoundRobin;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnSTRF;
+        private System.Windows.Forms.Button button1;
     }
 }
