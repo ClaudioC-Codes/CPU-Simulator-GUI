@@ -343,6 +343,7 @@ namespace CpuSchedulingWinForms
             }
         }
 
+        //Additions by Claudio Costa for Project 2
         private void btnSTRF_Click(object sender, EventArgs e) {
 
             if (txtProcess.Text != "")
@@ -408,6 +409,7 @@ namespace CpuSchedulingWinForms
             this.txtCodeInput.Clear();
         }
 
+        //Additions by Claudio Costa for Project 2
         private void btnPriorityPreemptive_Click(object sender, EventArgs e)
         {
 

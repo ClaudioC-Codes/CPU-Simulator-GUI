@@ -341,6 +341,7 @@ namespace CpuSchedulingWinForms
             }
         }
 
+        //Additions by Claudio Costa for Project 2
         public static void srtfAlgorithm(string userInput) 
         {
             int np = Convert.ToInt16(userInput);
@@ -465,6 +466,7 @@ namespace CpuSchedulingWinForms
 
         }
 
+        //Additions by Claudio Costa for Project 2
         public static void priorityPreemptiveAlgorithm(string userInput) {
 
             int np = Convert.ToInt16(userInput);

@@ -49,7 +49,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cpuSchedulerTab = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPriorityPreemptive = new System.Windows.Forms.Button();
             this.btnSTRF = new System.Windows.Forms.Button();
             this.btnRoundRobin = new System.Windows.Forms.Button();
             this.restartApp = new System.Windows.Forms.Label();
@@ -315,7 +315,7 @@
             this.cpuSchedulerTab.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.cpuSchedulerTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cpuSchedulerTab.BackgroundImage")));
             this.cpuSchedulerTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.cpuSchedulerTab.Controls.Add(this.button1);
+            this.cpuSchedulerTab.Controls.Add(this.btnPriorityPreemptive);
             this.cpuSchedulerTab.Controls.Add(this.btnSTRF);
             this.cpuSchedulerTab.Controls.Add(this.btnRoundRobin);
             this.cpuSchedulerTab.Controls.Add(this.restartApp);
@@ -332,15 +332,15 @@
             this.cpuSchedulerTab.TabIndex = 1;
             this.cpuSchedulerTab.Text = "CPU Scheduler";
             // 
-            // button1
+            // btnPriorityPreemptive
             // 
-            this.button1.Location = new System.Drawing.Point(175, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 56);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Priority (Preemptive)";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnPriorityPreemptive_Click);
+            this.btnPriorityPreemptive.Location = new System.Drawing.Point(175, 338);
+            this.btnPriorityPreemptive.Name = "btnPriorityPreemptive";
+            this.btnPriorityPreemptive.Size = new System.Drawing.Size(178, 56);
+            this.btnPriorityPreemptive.TabIndex = 14;
+            this.btnPriorityPreemptive.Text = "Priority (Preemptive)";
+            this.btnPriorityPreemptive.UseVisualStyleBackColor = true;
+            this.btnPriorityPreemptive.Click += new System.EventHandler(this.btnPriorityPreemptive_Click);
             // 
             // btnSTRF
             // 
@@ -611,7 +611,7 @@
         private System.Windows.Forms.Button btnRoundRobin;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnSTRF;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSTRF; //Additions by Claudio Costa for Project 2
+        private System.Windows.Forms.Button btnPriorityPreemptive; //Additions by Claudio Costa for Project 2
     }
 }
